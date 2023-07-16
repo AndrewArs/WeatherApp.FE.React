@@ -9,6 +9,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "deploy:docker": "docker build . -t weatherapp-react && docker stop weatherapp-react || true && docker rm weatherapp-react || true && docker run -p 3000:80 --name weatherapp-react -d weatherapp-react",
     "build:docker": "tsc && vite build --mode docker",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
