@@ -28,8 +28,8 @@
 All scripts can be executed by calling `yarn script_name`
 
 - **dev** - starts dev server
-- **deploy:docker** - script used to deploy app locally to the docker container
-- **build:docker** - used in docker deploy script. Just builds an application with .env.docker
+- **deploy:docker** - script used to deploy the app locally to the docker container
+- **build:docker** - used in docker deploy script. It just builds an application with .env.docker
 - **build** - builds production code in the folder _dist_
 - **lint** - runs eslint
 - **generate:api** - used for generating API.ts from swagger schema retrieved from the local back-end server
